@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		52AA266028116BC20028CCCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA265F28116BC20028CCCC /* AppDelegate.swift */; };
 		52AA266228116BC20028CCCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA266128116BC20028CCCC /* SceneDelegate.swift */; };
-		52AA266428116BC20028CCCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA266328116BC20028CCCC /* ViewController.swift */; };
-		52AA266728116BC20028CCCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AA266528116BC20028CCCC /* Main.storyboard */; };
+		52AA266428116BC20028CCCC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA266328116BC20028CCCC /* MainViewController.swift */; };
 		52AA266928116BC40028CCCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AA266828116BC40028CCCC /* Assets.xcassets */; };
 		52AA266C28116BC40028CCCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AA266A28116BC40028CCCC /* LaunchScreen.storyboard */; };
+		52AA267A28117EEE0028CCCC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA267928117EED0028CCCC /* CalendarView.swift */; };
+		52AA267C2811B3E30028CCCC /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA267B2811B3E30028CCCC /* WeatherView.swift */; };
+		52AA267F2812AD350028CCCC /* UIColor + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA267E2812AD350028CCCC /* UIColor + Extensions.swift */; };
+		52AA26812812AD520028CCCC /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA26802812AD520028CCCC /* UIFont + Extension.swift */; };
+		52AA26842812B1930028CCCC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52AA26832812B1930028CCCC /* Roboto-Bold.ttf */; };
+		52AA26862812B1AC0028CCCC /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52AA26852812B1AC0028CCCC /* Roboto-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52AA265C28116BC20028CCCC /* MyWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AA265F28116BC20028CCCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AA266128116BC20028CCCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52AA266328116BC20028CCCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52AA266628116BC20028CCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52AA266328116BC20028CCCC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		52AA266828116BC40028CCCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52AA266B28116BC40028CCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52AA266D28116BC40028CCCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52AA267928117EED0028CCCC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		52AA267B2811B3E30028CCCC /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		52AA267E2812AD350028CCCC /* UIColor + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extensions.swift"; sourceTree = "<group>"; };
+		52AA26802812AD520028CCCC /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		52AA26832812B1930028CCCC /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		52AA26852812B1AC0028CCCC /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,84 @@
 		52AA265E28116BC20028CCCC /* MyWorkout */ = {
 			isa = PBXGroup;
 			children = (
+				52AA267328116E170028CCCC /* Application */,
+				52AA267628116E620028CCCC /* Controller */,
+				52AA267428116E340028CCCC /* View */,
+				52AA267D2812ACD10028CCCC /* Extension */,
+				52AA267528116E580028CCCC /* Models */,
+				52AA267728116EF20028CCCC /* Resources */,
+			);
+			path = MyWorkout;
+			sourceTree = "<group>";
+		};
+		52AA267328116E170028CCCC /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				52AA265F28116BC20028CCCC /* AppDelegate.swift */,
 				52AA266128116BC20028CCCC /* SceneDelegate.swift */,
-				52AA266328116BC20028CCCC /* ViewController.swift */,
-				52AA266528116BC20028CCCC /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		52AA267428116E340028CCCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52AA267828117EC90028CCCC /* MainVC */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52AA267528116E580028CCCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52AA267628116E620028CCCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52AA266328116BC20028CCCC /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52AA267728116EF20028CCCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52AA26822812AD990028CCCC /* Fonts */,
 				52AA266828116BC40028CCCC /* Assets.xcassets */,
 				52AA266A28116BC40028CCCC /* LaunchScreen.storyboard */,
 				52AA266D28116BC40028CCCC /* Info.plist */,
 			);
-			path = MyWorkout;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52AA267828117EC90028CCCC /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				52AA267928117EED0028CCCC /* CalendarView.swift */,
+				52AA267B2811B3E30028CCCC /* WeatherView.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		52AA267D2812ACD10028CCCC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52AA267E2812AD350028CCCC /* UIColor + Extensions.swift */,
+				52AA26802812AD520028CCCC /* UIFont + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		52AA26822812AD990028CCCC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				52AA26832812B1930028CCCC /* Roboto-Bold.ttf */,
+				52AA26852812B1AC0028CCCC /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AA26862812B1AC0028CCCC /* Roboto-Medium.ttf in Resources */,
 				52AA266C28116BC40028CCCC /* LaunchScreen.storyboard in Resources */,
 				52AA266928116BC40028CCCC /* Assets.xcassets in Resources */,
-				52AA266728116BC20028CCCC /* Main.storyboard in Resources */,
+				52AA26842812B1930028CCCC /* Roboto-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +218,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52AA266428116BC20028CCCC /* ViewController.swift in Sources */,
+				52AA267C2811B3E30028CCCC /* WeatherView.swift in Sources */,
+				52AA266428116BC20028CCCC /* MainViewController.swift in Sources */,
 				52AA266028116BC20028CCCC /* AppDelegate.swift in Sources */,
+				52AA267F2812AD350028CCCC /* UIColor + Extensions.swift in Sources */,
+				52AA267A28117EEE0028CCCC /* CalendarView.swift in Sources */,
+				52AA26812812AD520028CCCC /* UIFont + Extension.swift in Sources */,
 				52AA266228116BC20028CCCC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +231,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		52AA266528116BC20028CCCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52AA266628116BC20028CCCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52AA266A28116BC40028CCCC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,12 +367,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 553DP5SJ57;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyWorkout/Info.plist;
+				INFOPLIST_FILE = MyWorkout/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +383,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,12 +396,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 553DP5SJ57;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyWorkout/Info.plist;
+				INFOPLIST_FILE = MyWorkout/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +412,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
