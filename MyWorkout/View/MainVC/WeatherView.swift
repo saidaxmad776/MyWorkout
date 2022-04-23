@@ -20,7 +20,8 @@ class WeatherView: UIView {
         let label = UILabel()
         label.text = "Солнечно"
         label.adjustsFontSizeToFitWidth = true
-        label.textColor = .darkGray
+        label.textColor = .specialGray
+        label.font = .robotoMedim18()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -29,7 +30,8 @@ class WeatherView: UIView {
         let label = UILabel()
         label.text = "Хорошая погода, чтобы позаниматься на улице"
         label.adjustsFontSizeToFitWidth = true
-        label.textColor = .gray
+        label.textColor = .specialGray
+        label.font = .robotoMedim14()
         label.numberOfLines = 20
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
