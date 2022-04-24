@@ -19,6 +19,23 @@ class StaticViewController: UIViewController {
         return label
     }()
     
+    private lazy var segmentedControll: UISegmentedControl = {
+       let segmentedControll = UISegmentedControl(items: ["Week", "Month"])
+        segmentedControll.selectedSegmentIndex = 0
+        segmentedControll.backgroundColor = .specialGreen
+        segmentedControll.selectedSegmentTintColor = .specialYellow
+        let font = UIFont(name: "Roboto-Medium", size: 16)
+        segmentedControll.setTitleTextAttributes([.font : font as Any,
+                                                  .foregroundColor : UIColor.white],
+                                                 for: .normal)
+        segmentedControll.setTitleTextAttributes([.font : font as Any,
+                                                  .foregroundColor : UIColor.specialGray],
+                                                 for: .selected)
+        segmentedControll.translatesAutoresizingMaskIntoConstraints = false
+        segmentedControll.addTarget(self, action: #selector(segmentedChanged), for: .valueChanged)
+        return segmentedControll
+    }()
+    
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .none
@@ -46,6 +63,7 @@ class StaticViewController: UIViewController {
         view.backgroundColor = .specialBackground
         
         view.addSubview(statisticLabel)
+        view.addSubview(segmentedControll)
         view.addSubview(exercisesLabel)
         view.addSubview(tableView)
         tableView.register(StatisticTableViewCell.self, forCellReuseIdentifier: idStatisticTableViewCell)
@@ -55,6 +73,10 @@ class StaticViewController: UIViewController {
     private func setDelegate() {
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    @objc private func segmentedChanged() {
+        
     }
 }
 
@@ -88,7 +110,13 @@ extension StaticViewController {
         ])
         
         NSLayoutConstraint.activate([
-            exercisesLabel.topAnchor.constraint(equalTo: statisticLabel.bottomAnchor, constant: 100),
+            segmentedControll.topAnchor.constraint(equalTo: statisticLabel.bottomAnchor, constant: 10),
+            segmentedControll.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            segmentedControll.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+        ])
+        
+        NSLayoutConstraint.activate([
+            exercisesLabel.topAnchor.constraint(equalTo: segmentedControll.bottomAnchor, constant: 10),
             exercisesLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             exercisesLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
