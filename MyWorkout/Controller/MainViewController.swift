@@ -111,6 +111,7 @@ class MainViewController: UIViewController {
     private func setDelegate() {
         tableView.dataSource = self
         tableView.delegate = self
+        calendarView.cellCollectionViewDelegate = self
     }
     
     @objc private func addWorkoutButtonTapped() {
@@ -119,6 +120,13 @@ class MainViewController: UIViewController {
         present(newWorkoutViewController, animated: true)
     }
 
+}
+
+extension MainViewController: SelectCollectionViewItemProtocol {
+    
+    func selectItem(date: Date) {
+        print(date)
+    }
 }
 
 //        MARK: - UITableViewDataSource

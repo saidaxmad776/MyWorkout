@@ -61,6 +61,15 @@ class CallendarCollectionViewCell: UICollectionViewCell {
         addSubview(numberOfDaykLabel)
     }
     
+    private func cellConfigure(numberOfDay: String, dayOfWeek: String) {
+        numberOfDaykLabel.text = numberOfDay
+        dayOfWeekLabel.text = dayOfWeek
+    }
+    
+    public func dateForCell(numberOfDay: String, dayOfWeek: String) {
+        cellConfigure(numberOfDay: numberOfDay, dayOfWeek: dayOfWeek)
+    }
+    
     private func setConstraints() {
         
         NSLayoutConstraint.activate([

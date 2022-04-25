@@ -12,6 +12,12 @@
 		52392B752814030A00D2F971 /* StatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B742814030A00D2F971 /* StatisticTableViewCell.swift */; };
 		52392B772814634900D2F971 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B762814634900D2F971 /* MainTabBarController.swift */; };
 		52392B7928146A0A00D2F971 /* NewWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B7828146A0A00D2F971 /* NewWorkoutViewController.swift */; };
+		52392B7C28152DEF00D2F971 /* DateAndRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B7B28152DEF00D2F971 /* DateAndRepeatView.swift */; };
+		52392B7E28152E0A00D2F971 /* RepsOrTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B7D28152E0A00D2F971 /* RepsOrTimeView.swift */; };
+		52392B85281676BB00D2F971 /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B84281676BB00D2F971 /* WorkoutModel.swift */; };
+		52392B882816798200D2F971 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B872816798200D2F971 /* RealmManager.swift */; };
+		52392B8A281697BD00D2F971 /* Date + Extencion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B89281697BD00D2F971 /* Date + Extencion.swift */; };
+		52392B8D2816BE4E00D2F971 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52392B8C2816BE4E00D2F971 /* SimpleAlert.swift */; };
 		52AA266028116BC20028CCCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA265F28116BC20028CCCC /* AppDelegate.swift */; };
 		52AA266228116BC20028CCCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA266128116BC20028CCCC /* SceneDelegate.swift */; };
 		52AA266428116BC20028CCCC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AA266328116BC20028CCCC /* MainViewController.swift */; };
@@ -27,14 +33,24 @@
 		52D921DD2813050A005A7FF5 /* CallendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D921DC2813050A005A7FF5 /* CallendarCollectionViewCell.swift */; };
 		52D921DF2813200D005A7FF5 /* WorkautTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D921DE2813200D005A7FF5 /* WorkautTableViewCell.swift */; };
 		52D921E12813276B005A7FF5 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D921E02813276B005A7FF5 /* UIStackView + Extension.swift */; };
+		88925ACFD7534DB0DE8C19DD /* Pods_MyWorkout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CD875F3F8AF66FE8D50489 /* Pods_MyWorkout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06A18814F2004BB97796679B /* Pods-MyWorkout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkout.debug.xcconfig"; path = "Target Support Files/Pods-MyWorkout/Pods-MyWorkout.debug.xcconfig"; sourceTree = "<group>"; };
+		19CD875F3F8AF66FE8D50489 /* Pods_MyWorkout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWorkout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0FA2ACAB4CF6D556D78018 /* Pods-MyWorkout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWorkout.release.xcconfig"; path = "Target Support Files/Pods-MyWorkout/Pods-MyWorkout.release.xcconfig"; sourceTree = "<group>"; };
 		52392B6F2813E9A700D2F971 /* StaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
 		52392B712813FBE000D2F971 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		52392B742814030A00D2F971 /* StatisticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableViewCell.swift; sourceTree = "<group>"; };
 		52392B762814634900D2F971 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		52392B7828146A0A00D2F971 /* NewWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutViewController.swift; sourceTree = "<group>"; };
+		52392B7B28152DEF00D2F971 /* DateAndRepeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndRepeatView.swift; sourceTree = "<group>"; };
+		52392B7D28152E0A00D2F971 /* RepsOrTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepsOrTimeView.swift; sourceTree = "<group>"; };
+		52392B84281676BB00D2F971 /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		52392B872816798200D2F971 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		52392B89281697BD00D2F971 /* Date + Extencion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extencion.swift"; sourceTree = "<group>"; };
+		52392B8C2816BE4E00D2F971 /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		52AA265C28116BC20028CCCC /* MyWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AA265F28116BC20028CCCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AA266128116BC20028CCCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,12 +75,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88925ACFD7534DB0DE8C19DD /* Pods_MyWorkout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3557383DAA5A572342D07744 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06A18814F2004BB97796679B /* Pods-MyWorkout.debug.xcconfig */,
+				2B0FA2ACAB4CF6D556D78018 /* Pods-MyWorkout.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		48B1319C6BD3D2CCE437C265 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19CD875F3F8AF66FE8D50489 /* Pods_MyWorkout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52392B73281402DC00D2F971 /* StatisticVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +107,38 @@
 			path = StatisticVC;
 			sourceTree = "<group>";
 		};
+		52392B7A28152D6900D2F971 /* NewWorkoutVC */ = {
+			isa = PBXGroup;
+			children = (
+				52392B7B28152DEF00D2F971 /* DateAndRepeatView.swift */,
+				52392B7D28152E0A00D2F971 /* RepsOrTimeView.swift */,
+			);
+			path = NewWorkoutVC;
+			sourceTree = "<group>";
+		};
+		52392B862816795600D2F971 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52392B872816798200D2F971 /* RealmManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52392B8B2816BE1E00D2F971 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				52392B8C2816BE4E00D2F971 /* SimpleAlert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
 		52AA265328116BC20028CCCC = {
 			isa = PBXGroup;
 			children = (
 				52AA265E28116BC20028CCCC /* MyWorkout */,
 				52AA265D28116BC20028CCCC /* Products */,
+				3557383DAA5A572342D07744 /* Pods */,
+				48B1319C6BD3D2CCE437C265 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +156,8 @@
 				52AA267328116E170028CCCC /* Application */,
 				52AA267628116E620028CCCC /* Controller */,
 				52AA267428116E340028CCCC /* View */,
+				52392B8B2816BE1E00D2F971 /* Alerts */,
+				52392B862816795600D2F971 /* Services */,
 				52AA267D2812ACD10028CCCC /* Extension */,
 				52AA267528116E580028CCCC /* Models */,
 				52AA267728116EF20028CCCC /* Resources */,
@@ -122,6 +185,7 @@
 		52AA267528116E580028CCCC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				52392B84281676BB00D2F971 /* WorkoutModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +215,8 @@
 		52AA267828117EC90028CCCC /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
+				52392B7A28152D6900D2F971 /* NewWorkoutVC */,
+				52392B73281402DC00D2F971 /* StatisticVC */,
 				52D921DB281304DF005A7FF5 /* Cells */,
 				52AA267928117EED0028CCCC /* CalendarView.swift */,
 				52AA267B2811B3E30028CCCC /* WeatherView.swift */,
@@ -166,6 +232,7 @@
 				52AA26872812B4730028CCCC /* UIView + Extensions.swift */,
 				52D921E02813276B005A7FF5 /* UIStackView + Extension.swift */,
 				52392B712813FBE000D2F971 /* UILabel + Extension.swift */,
+				52392B89281697BD00D2F971 /* Date + Extencion.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -184,7 +251,6 @@
 			children = (
 				52D921DC2813050A005A7FF5 /* CallendarCollectionViewCell.swift */,
 				52D921DE2813200D005A7FF5 /* WorkautTableViewCell.swift */,
-				52392B73281402DC00D2F971 /* StatisticVC */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -196,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52AA267028116BC40028CCCC /* Build configuration list for PBXNativeTarget "MyWorkout" */;
 			buildPhases = (
+				6FE09B9A3ED3F499BF39124E /* [CP] Check Pods Manifest.lock */,
 				52AA265828116BC20028CCCC /* Sources */,
 				52AA265928116BC20028CCCC /* Frameworks */,
 				52AA265A28116BC20028CCCC /* Resources */,
+				D8017BE08AFDF434BBE052F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +324,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FE09B9A3ED3F499BF39124E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWorkout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8017BE08AFDF434BBE052F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWorkout/Pods-MyWorkout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWorkout/Pods-MyWorkout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWorkout/Pods-MyWorkout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52AA265828116BC20028CCCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,15 +378,21 @@
 				52AA266428116BC20028CCCC /* MainViewController.swift in Sources */,
 				52392B702813E9A700D2F971 /* StaticViewController.swift in Sources */,
 				52AA266028116BC20028CCCC /* AppDelegate.swift in Sources */,
+				52392B8A281697BD00D2F971 /* Date + Extencion.swift in Sources */,
+				52392B85281676BB00D2F971 /* WorkoutModel.swift in Sources */,
 				52D921DD2813050A005A7FF5 /* CallendarCollectionViewCell.swift in Sources */,
 				52D921E12813276B005A7FF5 /* UIStackView + Extension.swift in Sources */,
 				52AA267F2812AD350028CCCC /* UIColor + Extensions.swift in Sources */,
 				52AA267A28117EEE0028CCCC /* CalendarView.swift in Sources */,
 				52392B722813FBE000D2F971 /* UILabel + Extension.swift in Sources */,
+				52392B7E28152E0A00D2F971 /* RepsOrTimeView.swift in Sources */,
 				52AA26812812AD520028CCCC /* UIFont + Extension.swift in Sources */,
+				52392B8D2816BE4E00D2F971 /* SimpleAlert.swift in Sources */,
 				52392B7928146A0A00D2F971 /* NewWorkoutViewController.swift in Sources */,
 				52392B752814030A00D2F971 /* StatisticTableViewCell.swift in Sources */,
+				52392B882816798200D2F971 /* RealmManager.swift in Sources */,
 				52AA266228116BC20028CCCC /* SceneDelegate.swift in Sources */,
+				52392B7C28152DEF00D2F971 /* DateAndRepeatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +528,7 @@
 		};
 		52AA267128116BC40028CCCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06A18814F2004BB97796679B /* Pods-MyWorkout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -441,6 +558,7 @@
 		};
 		52AA267228116BC40028CCCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0FA2ACAB4CF6D556D78018 /* Pods-MyWorkout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
